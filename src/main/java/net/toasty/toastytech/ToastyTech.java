@@ -46,6 +46,7 @@ public class ToastyTech
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.COPPER_ROD);
             event.accept(ModItems.IRON_ROD);
+            event.accept(ModItems.IRON_PLATE);
         }
     }
 
