@@ -43,8 +43,10 @@ public class ToastyTech
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.COPPER_ROD);
             event.accept(ModItems.IRON_ROD);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
