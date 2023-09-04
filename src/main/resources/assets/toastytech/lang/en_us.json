@@ -1,5 +1,7 @@
 {
   "item.toastytech.iron_rod": "Iron Rod",
   "item.toastytech.copper_rod": "Copper Rod",
-  "item.toastytech.iron_plate": "Iron Plate"
+  "item.toastytech.iron_plate": "Iron Plate",
+
+  "creativetab.toasty_tech": "Toasty Tech"
 }

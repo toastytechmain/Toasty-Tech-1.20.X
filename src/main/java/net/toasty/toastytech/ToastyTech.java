@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.toasty.toastytech.item.ModCreativeModeTabs;
 import net.toasty.toastytech.item.ModItems;
 import org.slf4j.Logger;
 
@@ -26,6 +27,8 @@ public class ToastyTech
     public ToastyTech()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
 
@@ -49,8 +52,6 @@ public class ToastyTech
             event.accept(ModItems.IRON_PLATE);
         }
     }
-
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
     {
